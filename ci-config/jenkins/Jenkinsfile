@@ -146,11 +146,11 @@ pipeline {
           }
         }
 
-        stage('Functional Test') {
-          steps {
-            sh "TEST_HOST=${env.TEST_HOST} node ./node_modules/.bin/cucumber-js ./target/test/integration --format json:./target/reports.json"
-          }
-        }
+//        stage('Functional Test') {
+//          steps {
+//            sh "TEST_HOST=${env.TEST_HOST} node ./node_modules/.bin/cucumber-js ./target/test/integration --format json:./target/reports.json"
+  //        }
+  //      }
     }
 
     post {
